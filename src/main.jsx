@@ -17,8 +17,13 @@ const router = createBrowserRouter([
     element: <App/>,
     errorElement:<ErrorHandle/>, 
     children:[{
-      path:'/Home',
+      path:'/',
       element:<Home/>
+    },
+    {
+      path:'/home',
+      element:<Home/>
+
     },
     {
       path:'/blog',
@@ -31,7 +36,11 @@ const router = createBrowserRouter([
     {
       path:'/appliedJob',
       element:<AppliedJob/>
-    },]
+    },{
+      path:'/*',
+      element:<Home/>
+
+    }]
   },
 ]);
 
