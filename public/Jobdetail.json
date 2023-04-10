@@ -1,0 +1,147 @@
+{
+    "jobs": [
+      {
+        "id": 1,
+        "companyLogo": "https://logos-world.net/wp-content/uploads/2020/06/Adobe-Logo.png",
+        "jobTitle": "Software Engineer",
+        "companyName": "Adobe",
+        "remoteOrOnsite": "Remote",
+        "location": "San Francisco, California",
+        "fulltimeOrParttime": "Full-time",
+        "salary": "$120,000 - $150,000",
+        "jobDescription": "We are seeking a talented software engineer to join our team...",
+        "jobResponsibility": "the software engineer's job responsibility is to design, develop, and maintain software solutions that meet business requirements and customer needs. They also test and debug software programs, write code documentation, and collaborate with cross-functional teams to identify and solve complex software issues. Additionally,  stay up-to-date with emerging technologies and industry trends to ensure the software products are innovative and competitive.",
+        "educationalRequirements": "Bachelor's or Master's degree in Computer Science or related field...",
+        "experiences": "Minimum of 3 years of experience in software development...",
+        "contactInformation": {
+          "phone": "555-123-4567",
+          "email": "jobs@acmeinc.com"
+        }
+      },
+      {
+        "id": 2,
+        "companyLogo": "https://th.bing.com/th/id/R.aa4dab3cdbae3da845910d4ede79e5d8?rik=D%2fvdN4SCuy168w&pid=ImgRaw&r=0",
+        "jobTitle": "Data Scientist",
+        "companyName": "Databricks",
+        "remoteOrOnsite": "Onsite",
+        "location": "New York, NY",
+        "fulltimeOrParttime": "Full-time",
+        "salary": "$130,000 - $160,000",
+        "jobDescription": "We are looking for a data scientist to join our growing team...",
+        "jobResponsibility": " the data scientist's job responsibility is to collect, analyze, and interpret complex data sets using statistical and machine learning techniques to gain insights and inform business decisions.  also develop and deploy predictive models, algorithms, and data-driven solutions to optimize business performance and drive innovation. Additionally, they collaborate with cross-functional teams to identify opportunities for data-driven improvements and ensure the accuracy and integrity of the data..",
+        "educationalRequirements": "Master's or PhD in Computer Science, Statistics, or related field...",
+        "experiences": "Minimum of 5 years of experience in data science or related field...",
+        "contactInformation": {
+          "phone": "555-234-5678",
+          "email": "jobs@xyzcorp.com"
+        }
+      },
+      {
+        "id": 3,
+        "companyLogo": "https://th.bing.com/th/id/R.ef017bea65f458e9bd2af0b377926d1b?rik=MG%2fEd93NCHk0cA&pid=ImgRaw&r=0",
+        "jobTitle": "Product Manager",
+        "companyName": "Salesforce.inc",
+        "remoteOrOnsite": "Remote",
+        "location": "Austin, TX",
+        "fulltimeOrParttime": "Full-time",
+        "salary": "$110,000 - $140,000",
+        "jobDescription": "We are seeking a talented product manager to join our team...",
+        "jobResponsibility": "the product manager's job responsibility is to identify market opportunities, develop product strategies and roadmaps, oversee product development, and launch successful products that meet customer needs and drive business growth.  Also collaborate with cross-functional teams, including engineering, design, sales, and marketing, to ensure successful product outcomes. ",
+        "educationalRequirements": "Bachelor's or Master's degree in Business, Engineering, or related field...",
+        "experiences": "Minimum of 3 years of experience in product management or related field...",
+        "contactInformation": {
+          "phone": "555-345-6789",
+          "email": "jobs@123co.com"
+        }
+      },
+      {
+        "id": 4,
+        "companyLogo": "https://dephoto.biz/themes/dephoto/assets/images/brand/landscape.svg",
+        "jobTitle": "photogrpher",
+        "companyName": "DE photo",
+        "remoteOrOnsite": "Onsite",
+        "location": "Los Angeles, CA",
+        "fulltimeOrParttime": "Part-time",
+        "salary": "$30 - $50 per hour",
+        "jobDescription": "We are seeking a part-time Photographer to join our team...",
+        "jobResponsibility": " the photographer's job responsibility is to capture and produce high-quality images for various purposes such as marketing, advertising, and branding, ensuring that the final output meets the organization's standards and requirements.",
+        "educationalRequirements": "Bachelor's degree in Graphic Design or related field...",
+        "experiences": "Minimum of 2 years of experience in Graphics design ",
+   "contactInformation": {
+          "phone": "555-345-6789",
+          "email": "jobs@123co.com"
+        }
+  },
+   {
+        "id": 5,
+        "companyLogo": "https://th.bing.com/th/id/R.ff5342ad67f403139a1fdf6c6e66c962?rik=odvtP69dxRXakQ&riu=http%3a%2f%2f1.bp.blogspot.com%2f-CnTGBZaanBY%2fUO9sKnXkBJI%2fAAAAAAAAEB8%2fZ5b9Ei0xris%2fs1600%2fFacebook%2blogo.png&ehk=GFzNdcj9lV4OuLVynIAWxGgQag7uXsSfrWOQsGSPYyk%3d&risl=&pid=ImgRaw&r=0",
+        "jobTitle": "React Developer",
+        "companyName": "Facebook",
+        "remoteOrOnsite": "Remote",
+        "location": "San Francisco, CA",
+        "fulltimeOrParttime": "Full-time",
+        "salary": "$120,000 - $150,000",
+        "jobDescription": "We are seeking a talented React developer to join our team...",
+        "jobResponsibility": "Develop and maintain software applications using modern technologies...",
+        "educationalRequirements": "Bachelor's or Master's degree in Computer Science or related field...",
+        "experiences": "Minimum of 3 years of experience in Web developement development...",
+        "contactInformation": {
+          "phone": "555-123-4567",
+          "email": "jobs@acmeinc.com"
+        }
+      },
+      {
+        "id": 6,
+        "companyLogo": "https://th.bing.com/th/id/R.5c78738d7d078622970355b54a4f3ab2?rik=R3f77Jhlu47Myw&pid=ImgRaw&r=0",
+        "jobTitle": "Digital marketing",
+        "companyName": "Sony.",
+        "remoteOrOnsite": "Onsite",
+        "location": "New York, NY",
+        "fulltimeOrParttime": "Full-time",
+        "salary": "$130,000 - $160,000",
+        "jobDescription": "We are looking for a digitl marketer to join our growing team...",
+        "jobResponsibility": "the digital marketer's job responsibility is to develop and execute digital marketing campaigns, monitor their performance, and optimize them to achieve business goals such as increasing brand awareness, generating leads, and driving sales.",
+        "educationalRequirements": "Master's or PhD in Computer Science, Statistics, or related field...",
+        "experiences": "Minimum of 5 years of experience in data science or related field...",
+        "contactInformation": {
+          "phone": "555-234-5678",
+          "email": "jobs@xyzcorp.com"
+        }
+      },
+      {
+        "id": 7,
+        "companyLogo": "https://th.bing.com/th/id/R.8b85385df00b0de28b63d7a4f50bb549?rik=GCNNGlVRQ5no8w&pid=ImgRaw&r=0",
+        "jobTitle": "Video Editing",
+        "companyName": "T-series Co.",
+        "remoteOrOnsite": "Remote",
+        "location": "Austin, TX",
+        "fulltimeOrParttime": "Full-time",
+        "salary": "$110,000 - $140,000",
+        "jobDescription": "We are seeking a talented Video editor to join our team...",
+        "jobResponsibility": " the video editor's job responsibility is to create and edit video content for various marketing and promotional purposes, ensuring that the final output meets the organization's standards and goals.",
+        "educationalRequirements": "Bachelor's or Master's degree in Business, Engineering, or related field...",
+        "experiences": "Minimum of 3 years of experience in Video Editing or related field...",
+        "contactInformation": {
+          "phone": "555-345-6789",
+          "email": "jobs@123co.com"
+        }
+      },
+      {
+        "id": 8,
+        "companyLogo": "https://th.bing.com/th/id/R.c3faf3b3ffb6d42f69c77586f30b2e1e?rik=rmQSHuEgSStJTQ&pid=ImgRaw&r=0",
+        "jobTitle": "Photo editing",
+        "companyName": "Discovery channel",
+        "remoteOrOnsite": "Onsite",
+        "location": "Los Angeles, CA",
+        "fulltimeOrParttime": "Part-time",
+        "salary": "$30 - $50 per hour",
+        "jobDescription": "We are seeking a part-time Photoshop expert to join our team...",
+        "jobResponsibility": "the photo editor's job responsibility is to edit and retouch photos to meet the organization's standards and requirements, ensuring that the final output is visually appealing and consistent with the brand's image.",
+        "educationalRequirements": "Bachelor's degree in Graphic Design or related field...",
+        "experiences": "Minimum of 2 years of experience in Graphics design ",
+   "contactInformation": {
+          "phone": "555-345-6789",
+          "email": "jobs@123co.com"
+        }
+  }]
+  }
