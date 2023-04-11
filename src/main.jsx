@@ -13,6 +13,8 @@ import Home from './components/home/Home';
 import Statistics from './components/statistic/Statistics';
 import JobDetails from './components/jobcart/JobDetails';
 import Spinner from './loaderSpinner/Spinner';
+
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -45,12 +47,13 @@ const router = createBrowserRouter([
     },
     {
       path:'/appliedJob',
-      element:<AppliedJob/>
-    },
+      element:<AppliedJob/>,
+      loader:()=>fetch('/Jobdetail.json')
+        },
     {
       path:'/jobDetails/:jobid',
     element:<JobDetails/> ,
-    loader:()=>fetch('Jobdetail.json')
+    loader:()=>fetch('/Jobdetail.json')
     },
     {
       path:'/*',

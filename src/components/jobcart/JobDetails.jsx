@@ -42,7 +42,7 @@ const JobDetails = () => {
         fetch('/Jobdetail.json')
         .then(res=>res.json())
         .then(data=>{
-            console.log(data)
+            
             const jobdatafound=data.find((items)=>items.id==value)
             setJob(jobdatafound)
           

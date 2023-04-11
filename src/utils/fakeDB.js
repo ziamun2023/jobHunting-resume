@@ -1,22 +1,34 @@
 //add data to local storage
 
-import { useState } from "react"
-import AppliedJob from "../components/appliedJob/AppliedJob"
+
 
 const addToData=(id)=>{
-    const quantity=localStorage.getItem(id);
-    if (quantity){
-const newquantity=parseInt(quantity)+1;
 
+    let appliedcart={}
+
+    const storedata=localStorage.getItem('applied-cart')
+    if(storedata){
+        appliedcart=JSON.parse(storedata)
+    }
+
+    // add quantity 
+const quantity=appliedcart[id]
+if(quantity){
+const   newquantity=quantity+1
 if(newquantity===2)
-{alert('already exist')}
+alert('alreafy added')
 
-    }
+// appliedcart[id]=newquantity
+}
     else{
-        localStorage.setItem(id,1)
+        appliedcart[id]=1
     }
+        
 
 
+localStorage.setItem('applied-cart',JSON.stringify(appliedcart))
+
+}
 
 
 
@@ -39,5 +51,19 @@ if(newquantity===2)
 // // const  value=added[id]
 // // if(added)
 // // localStorage.setItem('applied-job',id)
-}
-export {addToData}
+
+
+
+
+
+const getstoredcart=()=>{ 
+let appliedcart={}
+    
+    const storedata=localStorage.getItem('applied-cart')
+    if(storedata){
+        appliedcart=JSON.parse(storedata)
+    }
+return  appliedcart
+
+}   
+export {addToData,getstoredcart}
