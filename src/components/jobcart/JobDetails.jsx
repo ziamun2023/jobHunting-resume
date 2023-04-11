@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useParams ,useLoaderData,useNavigation } from 'react-router-dom';
 import { addToData } from '../../utils/fakeDB';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { CurrencyDollarIcon, CalendarIcon,PhoneIcon, DocumentTextIcon, MapPinIcon } from '@heroicons/react/24/solid'  
 import Spinner from '../../loaderSpinner/Spinner';
@@ -12,8 +14,13 @@ const JobDetails = () => {
   if (navigation.state === 'loading') {
     return <Spinner />
   }
+  
     const handleCartAdd=(id)=>{
         addToData(id)
+        
+
+        
+        // const notify = () => toast("Wow so easy!");
     }
 
 
@@ -105,7 +112,7 @@ const JobDetails = () => {
     
 
     </div>
-    <button onClick={()=>handleCartAdd(id)} className='design w-full font-semibold my-6 py-4 rounded-md'> Apply now</button>
+    <button  onClick={()=>handleCartAdd(id)} className='design w-full font-semibold my-6 py-4 rounded-md'> Apply now</button>
          </div>
    
 

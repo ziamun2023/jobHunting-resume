@@ -3,6 +3,8 @@
 
 
 const addToData=(id)=>{
+   
+    // npm 
 
     let appliedcart={}
 
@@ -15,11 +17,11 @@ const addToData=(id)=>{
 const quantity=appliedcart[id]
 if(quantity){
 const   newquantity=quantity+1
-if(newquantity===2)
-alert('alreafy added')
+if(newquantity===2){
 
+   alert('already added')
 // appliedcart[id]=newquantity
-}
+}}
     else{
         appliedcart[id]=1
     }
