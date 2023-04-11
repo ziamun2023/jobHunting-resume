@@ -40,3 +40,15 @@
 .read-the-docs {
   color: #888;
 }
+
+.angled-gradient {
+  background: linear-gradient(70deg, rgb(162, 162, 252), rgb(16, 129, 227));
+}
+
+body{
+  font-family: sans-serif;
+}
+
+.design{
+  background: linear-gradient(90deg, rgb(132, 126, 240) 0%, rgb(121, 121, 236) 37%, rgb(103, 146, 231) 100%)
+}

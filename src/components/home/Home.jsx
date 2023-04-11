@@ -1,7 +1,64 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link, useLoaderData, useParams ,useNavigation} from 'react-router-dom';
+import JobsCart from '../jobcart/JobsCart';
+import JobDetails from '../jobcart/JobDetails';
+import Spinner from '../../loaderSpinner/Spinner';
+
+
+
 const Home = () => {
-    return (
+  const navigation = useNavigation()
+ 
+  if (navigation.state === 'loading') {
+    return <Spinner />
+  }
+
+  const alldata=useLoaderData()
+  // console.log(alldata)
+
+
+// const [first, setFirst]=useState([])
+
+
+// console.log(first)
+
+  // const handleDetails=(id)=>{
+   
+    
+  // }
+
+
+
+     
+
+  
+
+
+  const jobdetail=useLoaderData()
+
+  let fouritem=jobdetail.slice(4)
+
+  
+  const [show, setShow]=useState(fouritem)
+
+  const handleShowMore=()=>{
+    setShow(jobdetail)
+  }
+
+
+  // {
+  //   const array=[]
+  //   jobdetail.map(item=>array.push(item))
+  // const fourpiece=array.slice(4)
+
+  // }
+   
+    
+// }
+ 
+
+
+  return (
         <div>
        <section>
        <div className=' grid lg:grid-cols-2 mx-16 relative '>
@@ -25,31 +82,56 @@ const Home = () => {
         <p className='font-medium text-4xl'>Job Catagory</p>
         <div className='mt-14 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6 xs:grid-cols-1'>
 <div className='border rounded-2xl '>
-<div className='m-2 shadow-lg rounded-2xl'><img className='rounded-2xl ' src="../../../public/pexels-sora-shimazaki-5669648 (1).jpg" alt="" /></div>
+<div className='m-2 shadow-lg rounded-2xl'><img className='rounded-2xl ' src="../../../public/picture.jpg" alt="" /></div>
 <p className='text-black text-left  font-medium p-2'>Engineering Job</p>
 <p className='text-gray-400  text-left p-2'>300 job available</p>
 </div>
 <div className='border rounded-2xl '>
-<div className='m-2 shadow-lg rounded-2xl'><img className='rounded-2xl ' src="../../../public/pexels-sora-shimazaki-5669648 (1).jpg" alt="" /></div>
-<p className='text-black text-left  font-medium p-2'>Engineering Job</p>
+<div className='m-2 shadow-lg rounded-2xl'><img className='rounded-2xl ' src="../../../public/picture5.jpg" alt="" /></div>
+<p className='text-black text-left  font-medium p-2'>Accounts and Finance</p>
 <p className='text-gray-400  text-left p-2'>300 job available</p>
 </div>
 <div className='border rounded-2xl '>
-<div className='m-2 shadow-lg rounded-2xl'><img className='rounded-2xl ' src="../../../public/pexels-sora-shimazaki-5669648 (1).jpg" alt="" /></div>
-<p className='text-black text-left  font-medium p-2'>Engineering Job</p>
+<div className='m-2 shadow-lg rounded-2xl'><img className='rounded-2xl ' src="../../../picture7.jpg" alt="" /></div>
+<p className='text-black text-left  font-medium p-2'>Creative</p>
 <p className='text-gray-400  text-left p-2'>300 job available</p>
 </div>
 <div className='border rounded-2xl '>
-<div className='m-2 shadow-lg rounded-2xl'><img className='rounded-2xl ' src="../../../public/pexels-sora-shimazaki-5669648 (1).jpg" alt="" /></div>
-<p className='text-black text-left  font-medium p-2'>Engineering Job</p>
+<div className='m-2 shadow-lg rounded-2xl'><img className='rounded-2xl ' src="../../../picture6.jpg" alt="" /></div>
+<p className='text-black text-left  font-medium p-2'>Marketing and sales
+</p>
 <p className='text-gray-400  text-left p-2'>300 job available</p>
 </div>
         </div>
        </section>
+
+       {/* featured */}
+       <section>
+       <p className='font-medium text-4xl my-16'>Featured Job</p>
+       <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-6' >
+
+        {
+         show.map(item=><JobsCart key={item.id}  jobs={item}></JobsCart>)
+        }
+       </div>
+       
+{
+
+show.length===4? <button className='bg-blue-800 text-white text-2xl font-semibold py-2 rounded-md shadow-lg my-6 px-4' onClick={handleShowMore}> show more</button>: null
+
+
+}  
+
+       </section>
+
+
   
-       {/* <div className='bg-black w-full  h-48 text-white relative  '> <p className='text'>&copy; all rights reserved   SHopsense </p> <p className='p-4'>Contact: +9908665234 <br /> address: 11th street , roadcity , xyCountry <br /> email: shopsense334@gmai.com </p>  </div> */}
+      
       </div>
     );
-};
+;}
 
 export default Home;
+// handleDetails={handleDetails}  
+
+// 

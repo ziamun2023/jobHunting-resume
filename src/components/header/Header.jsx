@@ -24,16 +24,16 @@ const Header = () => {
         {/* <input onChange={changing} type="text" /> <Link to={`search/:${params.description}`}><button onClick={searchforproducts}> search</button></Link> */}
                   {/* <NavLink to='/' className={({isActive})=> isActive? 'text-blue-600': 'default' }> home</NavLink> */}
               </li>
-              <li className='hover:text-xl hover:bg-white rounded-md p-3 duration-200'>
-                  <NavLink to='/home' className={({isActive})=> isActive? 'text-blue-600': 'default' }> home</NavLink>
+              <li className='hover:text-xl hover:bg-gray-200 rounded-md p-3 duration-200'>
+                  <NavLink to='/home' className={({isActive})=> isActive? 'text-blue-600': 'default' }> Home</NavLink>
               </li>
-              <li className='hover:text-xl hover:bg-white rounded-md p-3 duration-200'>
+              <li className='hover:text-xl hover:bg-gray-200 rounded-md p-3 duration-200'>
                   <NavLink to='/appliedJob' className={({isActive})=> isActive? 'text-blue-600': 'default' }>Applied Job </NavLink>
               </li>
-              <li className='hover:text-xl hover:bg-white rounded-md p-3 duration-200'>
-                  <NavLink to='/blog' className={({isActive})=> isActive? 'text-blue-600': 'default' }> |Blogs</NavLink>
+              <li className='hover:text-xl hover:bg-gray-200 rounded-md p-3 duration-200'>
+                  <NavLink to='/blog' className={({isActive})=> isActive? 'text-blue-600': 'default' }> Blogs</NavLink>
               </li>
-              <li className='hover:text-xl hover:bg-white rounded-md p-3 duration-200'>
+              <li className='hover:text-xl hover:bg-gray-200 rounded-md p-3 duration-200'>
                   <NavLink to='/statistic' className={({isActive})=> isActive? 'text-blue-600': 'default' }> Statistic</NavLink>
               </li>
              

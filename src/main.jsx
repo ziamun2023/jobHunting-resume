@@ -11,6 +11,8 @@ import AppliedJob from './components/appliedJob/AppliedJob';
 import ErrorHandle from './components/error/ErrorHandle';
 import Home from './components/home/Home';
 import Statistics from './components/statistic/Statistics';
+import JobDetails from './components/jobcart/JobDetails';
+import Spinner from './loaderSpinner/Spinner';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -18,11 +20,14 @@ const router = createBrowserRouter([
     errorElement:<ErrorHandle/>, 
     children:[{
       path:'/',
-      element:<Home/>
+      element:<Home/>,
+      loader:()=>fetch('/Jobdetail.json')
     },
     {
       path:'/home',
-      element:<Home/>
+      element:<Home/>,
+      loader:()=>fetch('/Jobdetail.json')
+    
 
     },
     {
@@ -30,13 +35,24 @@ const router = createBrowserRouter([
       element:<Blogs/>
     },
     {
+      path:'/loaderSpinner',
+      element:<Spinner/>
+    },
+ 
+    {
       path:'/statistic',
       element:<Statistics/>
     },
     {
       path:'/appliedJob',
       element:<AppliedJob/>
-    },{
+    },
+    {
+      path:'/jobDetails/:jobid',
+    element:<JobDetails/> ,
+    loader:()=>fetch('Jobdetail.json')
+    },
+    {
       path:'/*',
       element:<Home/>
 
