@@ -1,5 +1,6 @@
 //add data to local storage
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const addToData=(id)=>{
@@ -19,16 +20,18 @@ if(quantity){
 const   newquantity=quantity+1
 if(newquantity===2){
 
-   alert('already added')
+    toast("already added");
 // appliedcart[id]=newquantity
 }}
     else{
         appliedcart[id]=1
+       
     }
         
 
 
 localStorage.setItem('applied-cart',JSON.stringify(appliedcart))
+
 
 }
 

@@ -6,10 +6,11 @@ const LocalStoredData = ({item}) => {
 
         
     const {companyLogo ,jobTitle, companyName, remoteOrOnsite,experiences,educationalRequirements,jobResponsibility, location,jobDescription ,phone,email,id,salary, fulltimeOrParttime}=item
+    console.log(item)
     return (
         <div> 
    
-       <section className=' relative '>
+       <section  data-aos="fade-right" className=' relative '>
            <div className='flex border my-6 rounded-md shadow-md hover:-translate-y-2 duration-300 '>
            <div className='w-28 ps-10 pt-4 '>
               <img src={item.companyLogo} alt="" />

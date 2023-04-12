@@ -13,6 +13,7 @@ import Home from './components/home/Home';
 import Statistics from './components/statistic/Statistics';
 import JobDetails from './components/jobcart/JobDetails';
 import Spinner from './loaderSpinner/Spinner';
+import Remote from './components/appliedJob/Remote';
 
 
 const router = createBrowserRouter([
@@ -54,6 +55,11 @@ const router = createBrowserRouter([
       path:'/jobDetails/:jobid',
     element:<JobDetails/> ,
     loader:()=>fetch('/Jobdetail.json')
+    },
+    {
+      path:'/remote',
+    element:<Remote/> 
+ 
     },
     {
       path:'/*',

@@ -1,9 +1,9 @@
 import React from 'react';
 import {  MapIcon, CurrencyDollarIcon  } from '@heroicons/react/24/solid' 
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 
 const JobsCart = ({jobs}) => {
-const navigate =useNavigate()
+
    
 
 

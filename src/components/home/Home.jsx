@@ -63,13 +63,13 @@ const Home = () => {
        <section>
        <div className=' grid lg:grid-cols-2 mx-16 relative '>
   
-  <div  className='mt-20'>
+  <div  data-aos="zoom-in"  className='mt-20'>
 <p className='text-6xl text-left font-semibold '>As you look for your own dream job, consider what’s <span className='text-blue-400'>trending. </span></p>
 <p className='text-left pt-7'>If certainty is a core need for you, then Shopsense can meet that need perfectly Shopping is always there – there are always Shopsense to be shopped at. There’s never any concern that the shops won’t be there, or won’t be open, or won’t want to take your trade.</p>
 <Link to='/'>
 <p className='text-start'> <button className='bg-blue-400    hover:bg-blue-500 px-8 py-2 mt-8 font text-lg text-white '>Log In</button></p> </Link>
   </div>
-   <div className='my-auto ms-2  p-6'  >
+   <div  data-aos="fade-left" className='my-auto ms-2  p-6'  >
  <img className='rounded-xl shadow-2xl' src="/picture01.jpg" alt="" />
   
   </div>
@@ -79,8 +79,8 @@ const Home = () => {
        </section>
        <section>
 
-        <p className='font-medium text-4xl'>Job Catagory</p>
-        <div className='mt-14 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6 xs:grid-cols-1'>
+        <p data-aos="zoom-in" className='font-medium text-4xl'>Job Catagory</p>
+        <div data-aos="zoom-in" className='mt-14 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6 xs:grid-cols-1'>
 <div className='border rounded-2xl '>
 <div className='m-2 shadow-lg rounded-2xl'><img className='rounded-2xl ' src="../../../public/picture.jpg" alt="" /></div>
 <p className='text-black text-left  font-medium p-2'>Engineering Job</p>
@@ -107,8 +107,9 @@ const Home = () => {
 
        {/* featured */}
        <section>
-       <p className='font-medium text-4xl my-16'>Featured Job</p>
-       <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-6' >
+       <p data-aos="zoom-in" className='font-medium text-4xl my-16'>Featured Job</p>
+       <div    data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" className='grid lg:grid-cols-2 sm:grid-cols-1 gap-6' >
 
         {
          show.map(item=><JobsCart key={item.id}  jobs={item}></JobsCart>)
@@ -117,7 +118,7 @@ const Home = () => {
        
 {
 
-show.length===4? <button className='bg-blue-800 text-white text-2xl font-semibold py-2 rounded-md shadow-lg my-6 px-4' onClick={handleShowMore}> show more</button>: null
+show.length===4? <button   className='bg-blue-800 text-white text-2xl font-semibold py-2 rounded-md shadow-lg my-6 px-4' onClick={handleShowMore}> show more</button>: null
 
 
 }  

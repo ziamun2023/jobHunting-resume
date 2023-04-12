@@ -16,7 +16,9 @@ const JobDetails = () => {
   }
   
     const handleCartAdd=(id)=>{
+        toast("Cv submission successful");
         addToData(id)
+      
         
 
         
@@ -77,7 +79,7 @@ const JobDetails = () => {
         <section  className='h-60 bg-white text-center '>
         <p className='p-24 text-4xl font-bold'>Job Detail</p>
         </section>
-        <section className='grid grid-cols-3 gap-6 my-4'>
+        <section data-aos="zoom-in-down" className='grid grid-cols-3 gap-6 my-4'>
             
        
            <div className='col-span-2 text-left '> <p className='my-3 '><b>Job description :</b><span className='text-slate-600'>{jobDescription}</span></p>
@@ -113,8 +115,9 @@ const JobDetails = () => {
 
     </div>
     <button  onClick={()=>handleCartAdd(id)} className='design w-full font-semibold my-6 py-4 rounded-md'> Apply now</button>
-         </div>
    
+         </div>
+         <ToastContainer />
 
         </section>
 
