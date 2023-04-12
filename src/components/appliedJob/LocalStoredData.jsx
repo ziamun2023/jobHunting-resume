@@ -10,8 +10,8 @@ const LocalStoredData = ({item}) => {
     return (
         <div> 
    
-       <section  data-aos="fade-right" className=' relative '>
-           <div className='flex border my-6 rounded-md shadow-md hover:-translate-y-2 duration-300 '>
+       <section  data-aos="fade-right" className=' relative mx-28  '>
+           <div className='flex border my-6 rounded-md shadow-md hover:-translate-y-2 duration-300  '>
            <div className='w-28 ps-10 pt-4 '>
               <img src={item.companyLogo} alt="" />
 

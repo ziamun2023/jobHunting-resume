@@ -5,11 +5,14 @@ import { useState } from 'react';
 import LocalStoredData from './LocalStoredData';
 
 const AppliedJob = () => {
+
+
    
 // const refreshPage=()=>{
 //     window.location.reload(false);
 // }
    const [filterit,setFilterit]=useState()
+
 
 
 
@@ -21,6 +24,8 @@ const AppliedJob = () => {
         const findit=filterit.filter(item=>item.remoteOrOnsite==="Remote")
         
         setCart(findit)
+
+
          
       } 
 
@@ -80,7 +85,11 @@ const AppliedJob = () => {
 
 
 useEffect(()=>{
+
+
 const store=getstoredcart()
+
+
 const savedcart=[]
 // console.log("alla",store)
 for (const id in store){
@@ -96,6 +105,7 @@ for (const id in store){
 }
 setCart(savedcart)
 setFilterit(savedcart)
+
 },[pdata]
 )
 
@@ -104,11 +114,17 @@ setFilterit(savedcart)
               <section  className='h-60 bg-white text-center '>
    <p className='p-24 text-4xl font-bold'>Job applied</p>
    </section>
+
+
+   
+    
+   
+  
       
    <section className='text-end'>
    
 
-<div className=''>
+<div className='mx-28 '>
 <button className='bg-blue-100 px-6 mx-2 rounded-md' onClick={()=>filterRemote()}> Filter Remote</button>
 <button className='bg-blue-100 px-6 mx-2 rounded-md' onClick={()=>filterOnsite()}> Filter onsite </button>
 <button className='bg-blue-100 px-6 mx-2 rounded-md' onClick={()=>filterAll()}> All </button>

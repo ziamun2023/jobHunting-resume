@@ -9,7 +9,7 @@ const JobsCart = ({jobs}) => {
 
     const {companyLogo ,jobTitle, companyName, remoteOrOnsite,experiences, location ,id,salary, fulltimeOrParttime}=jobs
     return (
-        <div className='border grid grid-cols-1 rounded-lg p-4 shadow-md '>
+        <div className='border grid grid-cols-1 rounded-lg p-4 shadow-md  '>
             <div><img className='w-12' src={companyLogo} alt="" /></div>
             <p className='font-semibold text-left'> {jobTitle}</p>
             <p className='text-left font-lightbold text-gray-600'>{companyName}</p>

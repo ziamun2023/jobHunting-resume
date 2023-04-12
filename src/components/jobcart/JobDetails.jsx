@@ -6,6 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import { CurrencyDollarIcon, CalendarIcon,PhoneIcon, DocumentTextIcon, MapPinIcon } from '@heroicons/react/24/solid'  
 import Spinner from '../../loaderSpinner/Spinner';
+import Banner from '../banner/Banner';
 
 
 const JobDetails = () => {
@@ -76,10 +77,10 @@ const JobDetails = () => {
        <div >
         {/* job detail header */}
 
-        <section  className='h-60 bg-white text-center '>
-        <p className='p-24 text-4xl font-bold'>Job Detail</p>
+        <section    className=' bg-white text-center absolute top-0 -z-10 left-0'>
+       <Banner/>
         </section>
-        <section data-aos="zoom-in-down" className='grid grid-cols-3 gap-6 my-4'>
+        <section data-aos="zoom-in-down" className='grid grid-cols-3 gap-6 my-4  mt-80 mx-16'>
             
        
            <div className='col-span-2 text-left '> <p className='my-3 '><b>Job description :</b><span className='text-slate-600'>{jobDescription}</span></p>

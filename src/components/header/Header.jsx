@@ -9,18 +9,18 @@ import { BoltIcon,Bars3Icon,XMarkIcon } from '@heroicons/react/24/solid'
 const Header = () => {
   const [IsMenuOpen,setIsMenuOpen]=useState(false)
   return (
-   <div className=' px-4 py-5 mx-auto md:px-24 lg:px-8   '  >
+   <div className='adjustmargin px-4 py-5 mx-auto md:px-24 lg:px-8'  >
          <div className='relative flex space-x-6 m-4 pr-8 justify-between'>
       
       <Link to ='/' className='flex'>
         <BoltIcon className="h-6 w-6 text-blue-500" />
-        <span> CompanyName</span>
+        <span> Job<span className='text-blue-600'>Net</span>worx</span>
           
           </Link> 
 
 
-       <ul className='item-center hidden space-x-8 lg:flex text-lg font-medium '>
-       <li  className='hover:text-xl hover:bg-white rounded-md p-3 duration-200'>
+       <ul className='item-center hidden space-x-8 lg:flex text-lg font-medium bg-blue-200 rounded-md absolute  left-72 pe-10'>
+       <li  className='hover:text-xl hover:bg-white rounded-md -me-3 p-3 duration-200'>
         {/* <input onChange={changing} type="text" /> <Link to={`search/:${params.description}`}><button onClick={searchforproducts}> search</button></Link> */}
                   {/* <NavLink to='/' className={({isActive})=> isActive? 'text-blue-600': 'default' }> home</NavLink> */}
               </li>
@@ -35,6 +35,9 @@ const Header = () => {
               </li>
               <li className='hover:text-xl hover:bg-gray-200 rounded-md p-3 duration-200'>
                   <NavLink to='/statistic' className={({isActive})=> isActive? 'text-blue-600': 'default' }> Statistic</NavLink>
+              </li>
+              <li className='hover:text-xl hover:bg-gray-200 rounded-md p-3 duration-200'>
+                  <NavLink to='/login' className={({isActive})=> isActive? 'text-blue-600': 'default' }> login</NavLink>
               </li>
              
               </ul>
