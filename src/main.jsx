@@ -16,6 +16,7 @@ import Spinner from './loaderSpinner/Spinner';
 import Remote from './components/appliedJob/Remote';
 import Login from './components/login/Login';
 import Banner from './components/banner/Banner';
+import Banner2 from './components/banner/Banner2';
 
 
 const router = createBrowserRouter([
@@ -51,6 +52,11 @@ const router = createBrowserRouter([
       path:'/banner',
       element:<Banner/>
     },
+    {
+      path:'/banner2',
+      element:<Banner2/>
+    },
+    
     {
       path:'/statistic',
       element:<Statistics/>

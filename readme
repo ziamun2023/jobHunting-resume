@@ -1,0 +1,24 @@
+___project description :___
+
+*It is a website where anyone can find their suitable job
+*This website has been built based on React js
+*Tailwind has been used for designing the appearance
+
+___Key features:___
+
+*It has different catagory to select jobs 
+*Job details will be shown on view details button click
+*One click to apply in any job
+*Separate page to show the applied jobs 
+*Store data in local storage 
+*used smooth animation from https://michalsnik.github.io/aos/
+*load more button added
+*Filter by remote job and FIlter by onsite job
+
+___Live link of project:___
+
+
+___About myself:___
+I am a student of hons 4th year in Chittagong University. 
+I live in chittagong. Recently focused on making high featured and demanding website development.
+Curious about react js and other features of react . Determined to know more about Redux. Giving my best to become a full stack web developer in 2023. 
