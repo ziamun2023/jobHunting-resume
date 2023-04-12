@@ -82,7 +82,7 @@ const Home = () => {
         <p data-aos="zoom-in" className='font-medium text-4xl '>Job Catagory</p>
         <div data-aos="zoom-in" className='mx-36 mt-14 grid lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-2 gap-6 xs:grid-cols-1 '>
 <div className='border rounded-2xl '>
-<div className='m-2 shadow-lg rounded-2xl'><img className='rounded-2xl ' src="/public/picture.jpg" alt="" /></div>
+<div className='m-2 shadow-lg rounded-2xl'><img className='rounded-2xl ' src="/public/picture .jpg" alt="" /></div>
 <div className='border rounded-2xl '>
  <div className='flex'>
  <div >
