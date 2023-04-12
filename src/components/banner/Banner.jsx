@@ -3,7 +3,7 @@ import React from 'react';
 const Banner = () => {
     return (
         <div>
-            <img src="../../../public/JOB DETAILS.png" alt="" />
+            <img src="/JOB DETAILS.png" alt="" />
         </div>
     );
 };
