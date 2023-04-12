@@ -2,6 +2,8 @@ import React from 'react';
 import Lottie from "lottie-react";
 import groovyWalkAnimation from "../../../public/68312-login.json";
 
+        
+
 const Login = () => {
     return (
         <div  data-aos="zoom-in-down" className='grid lg:grid-cols-2 pt-6 pb-12 m-10 mx-32'>
