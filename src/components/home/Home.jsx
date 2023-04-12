@@ -3,6 +3,7 @@ import { Link, useLoaderData, useParams ,useNavigation} from 'react-router-dom';
 import JobsCart from '../jobcart/JobsCart';
 import JobDetails from '../jobcart/JobDetails';
 import Spinner from '../../loaderSpinner/Spinner';
+import { BuildingOfficeIcon ,Bars3Icon,XMarkIcon } from '@heroicons/react/24/solid' 
 
 
 
@@ -82,11 +83,11 @@ const Home = () => {
         <p data-aos="zoom-in" className='font-medium text-4xl '>Job Catagory</p>
         <div data-aos="zoom-in" className='mx-36 mt-14 grid lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-2 gap-6 xs:grid-cols-1 '>
 <div className='border rounded-2xl '>
-<div className='m-2 shadow-lg rounded-2xl'><img className='rounded-2xl ' src="/public/picture .jpg" alt="" /></div>
+<div className='m-2 shadow-lg rounded-2xl'><img src="/picture .jpg" alt="" /></div>
 <div className='border rounded-2xl '>
  <div className='flex'>
  <div >
-  <img className='w-10 m-2' src="/public/engineering-clipart-engineer-cap-12.png" alt="" />
+  <img className='w-10 m-2' src="/engineering-clipart-engineer-cap-12.png" alt="" />
   </div>
   <div >
   <p className='text-black text-left  font-medium p-2'>Engineering Job</p>
@@ -96,10 +97,10 @@ const Home = () => {
 </div>
 </div>
 <div className='border rounded-2xl '>
-<div className='m-2 shadow-lg rounded-2xl'><img className='rounded-2xl ' src="/public/picture5.jpg" alt="" /></div>
+<div className='m-2 shadow-lg rounded-2xl'><img className='rounded-2xl ' src="/picture5.jpg" alt="" /></div>
 <div className='flex'>
   <div >
-<img className='w-10 m-2' src="/public/accounting-icon-png-5.png" alt="" />
+<img className='w-10 m-2' src="/accounting-icon-png-5.png" alt="" />
   </div>
   <div>
   <p className='text-black text-left  font-medium p-2'>Accounts and Finance</p>
@@ -111,7 +112,7 @@ const Home = () => {
 <div className='m-2 shadow-lg rounded-2xl'><img className='rounded-2xl ' src="/picture7.jpg" alt="" /></div>
 <div className='flex'>
   <div>
-<img  className='w-10 m-2' src="/public/R.png" alt="" />
+<img  className='w-10 m-2' src="/R.png" alt="" />
   </div>
   <div>
   <p className='text-black text-left  font-medium p-2'>Creative</p>
@@ -123,7 +124,7 @@ const Home = () => {
 <div className='m-2 shadow-lg rounded-2xl'><img className='rounded-2xl ' src="/picture6.jpg" alt="" /></div>
 <div className='flex'>
   <div>
-    <img className='w-10 m-2' src="/public/R (1).png" alt="" />
+    <img className='w-10 m-2' src="/R (1).png" alt="" />
   </div>
   <div>
   <p className='text-black text-left  font-medium p-2'>Marketing and sales
