@@ -82,25 +82,55 @@ const Home = () => {
         <p data-aos="zoom-in" className='font-medium text-4xl '>Job Catagory</p>
         <div data-aos="zoom-in" className='mx-36 mt-14 grid lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-2 gap-6 xs:grid-cols-1 '>
 <div className='border rounded-2xl '>
-<div className='m-2 shadow-lg rounded-2xl'><img className='rounded-2xl ' src="../../../public/picture.jpg" alt="" /></div>
-<p className='text-black text-left  font-medium p-2'>Engineering Job</p>
+<div className='m-2 shadow-lg rounded-2xl'><img className='rounded-2xl ' src="/public/picture.jpg" alt="" /></div>
+<div className='border rounded-2xl '>
+ <div className='flex'>
+ <div >
+  <img className='w-10 m-2' src="/public/engineering-clipart-engineer-cap-12.png" alt="" />
+  </div>
+  <div >
+  <p className='text-black text-left  font-medium p-2'>Engineering Job</p>
 <p className='text-gray-400  text-left p-2'>300 job available</p>
+  </div>
+ </div>
+</div>
 </div>
 <div className='border rounded-2xl '>
-<div className='m-2 shadow-lg rounded-2xl'><img className='rounded-2xl ' src="../../../public/picture5.jpg" alt="" /></div>
-<p className='text-black text-left  font-medium p-2'>Accounts and Finance</p>
+<div className='m-2 shadow-lg rounded-2xl'><img className='rounded-2xl ' src="/public/picture5.jpg" alt="" /></div>
+<div className='flex'>
+  <div >
+<img className='w-10 m-2' src="/public/accounting-icon-png-5.png" alt="" />
+  </div>
+  <div>
+  <p className='text-black text-left  font-medium p-2'>Accounts and Finance</p>
 <p className='text-gray-400  text-left p-2'>300 job available</p>
+  </div>
+</div>
 </div>
 <div className='border rounded-2xl '>
-<div className='m-2 shadow-lg rounded-2xl'><img className='rounded-2xl ' src="../../../picture7.jpg" alt="" /></div>
-<p className='text-black text-left  font-medium p-2'>Creative</p>
+<div className='m-2 shadow-lg rounded-2xl'><img className='rounded-2xl ' src="/picture7.jpg" alt="" /></div>
+<div className='flex'>
+  <div>
+<img  className='w-10 m-2' src="/public/R.png" alt="" />
+  </div>
+  <div>
+  <p className='text-black text-left  font-medium p-2'>Creative</p>
 <p className='text-gray-400  text-left p-2'>300 job available</p>
+  </div>
+</div>
 </div>
 <div className='border rounded-2xl '>
-<div className='m-2 shadow-lg rounded-2xl'><img className='rounded-2xl ' src="../../../picture6.jpg" alt="" /></div>
-<p className='text-black text-left  font-medium p-2'>Marketing and sales
+<div className='m-2 shadow-lg rounded-2xl'><img className='rounded-2xl ' src="/picture6.jpg" alt="" /></div>
+<div className='flex'>
+  <div>
+    <img className='w-10 m-2' src="/public/R (1).png" alt="" />
+  </div>
+  <div>
+  <p className='text-black text-left  font-medium p-2'>Marketing and sales
 </p>
 <p className='text-gray-400  text-left p-2'>300 job available</p>
+  </div>
+</div>
 </div>
         </div>
        </section>

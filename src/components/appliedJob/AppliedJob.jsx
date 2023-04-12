@@ -6,8 +6,10 @@ import LocalStoredData from './LocalStoredData';
 
 const AppliedJob = () => {
 
-
-   
+const removeit=()=>{
+  localStorage.removeItem("applied-cart")
+  setCart([])
+}   
 // const refreshPage=()=>{
 //     window.location.reload(false);
 // }
@@ -124,10 +126,11 @@ setFilterit(savedcart)
    <section className='text-end'>
    
 
-<div className='mx-28 '>
+<div className='mx-28  my-6'>
 <button className='bg-blue-100 px-6 mx-2 rounded-md' onClick={()=>filterRemote()}> Filter Remote</button>
 <button className='bg-blue-100 px-6 mx-2 rounded-md' onClick={()=>filterOnsite()}> Filter onsite </button>
 <button className='bg-blue-100 px-6 mx-2 rounded-md' onClick={()=>filterAll()}> All </button>
+<button className='bg-blue-100 px-6 mx-2 rounded-md' onClick={()=>removeit()}>remove all applied job</button>
 
 </div>
 
